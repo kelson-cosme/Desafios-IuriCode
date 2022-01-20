@@ -23,13 +23,6 @@
 <img src= "./projetosProntos/desafio1/blog.png">
 
 <br>
-
-## Versão Mobile 📱
-<br>
-<img src= "./projetosProntos/desafio1/blog-mobile.png">
-
-<br>
-
 <br>
 
 ### Status: Concluído ✅
@@ -45,13 +38,6 @@
 <img src= "./projetosProntos/desafio2/jordanshoes.png">
 
 <br>
-
-## Versão Mobile 📱
-<br>
-<img src= "./projetosProntos/desafio2/jordanshoes-mobile.png">
-
-<br>
-
 <br>
 
 ### Status: Concluído ✅
