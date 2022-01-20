@@ -10,7 +10,7 @@
 
 <br>
 
-<img src="./projetosProntos/desafio1/desafio1/blog.png">
+<img src= " projetosProntos/desafio1/desafio1/blog.png">
 
 <br>
 
