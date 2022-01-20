@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-image: linear-gradient(to right,#574AE8, #3EA1DB);
+    color: #ffff;
+    font-size: 24px;
+    padding: 20px 0 35px 0;
+}
+.cabecalho{
+    max-width: 1366px;
+    margin: auto;
+}
+.titulos{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}   
+.pesquisa{
+    width: 80%;
+    margin: auto;
+}
+.lupa{
+    position: relative;
+    top: 49px;
+    left: 7px;
+}
+input{
+    width: calc(100% - 80px);
+    background-color: rgba(255, 255, 255, 0.199);
+    /* background-color: rgba(0, 0, 0, 0.199); */
+    border: none;
+    padding: 12px 40px;
+    border-radius: 4px;
+
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+input::placeholder { 
+    color: #ffff;
+    opacity: 0.5;
+}
+
+.corpo{
+    background-color: #F3F5F7;
+    padding: 10px 0;
+}
+.noticias{
+    max-width: 1366px;
+    margin: auto;
+}
+ul{
+    padding-top: 50px;
+    width:calc(80% - 10px) ;
+    margin: auto;
+    list-style-type: none;
+}
+li{
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.164);
+    margin: 0 0 45px 0;
+    text-align: justify;
+    background-color: #ffff;
+}
+li h1{
+    font-size: 26px;
+    color: #1A202C;
+}
+li p{
+    color: #717171;
+    font-size: 14px;
+}
+#texto div{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+    .titulos{
+        width: 90%;
+    }
+    .pesquisa{
+        width: 90%;
+    }
+    ul{
+        width: 90%;
+    }
+}

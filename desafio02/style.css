@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+.comeco{
+    background-color: #181818;
+    padding: 20px 0;
+    color: #ffff;
+    text-align: center;
+}
+.titulo{
+    padding: 20px 0;
+    text-align: center;
+}
+
+header{
+    background-image: url("/imgs/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+}
+.sobrepor{
+    width: 100%;
+    height: 316px;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+.apresentacao{
+    max-width: 1366px;
+    height: 316px;
+    margin: auto;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+}
+.dentro{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 70px;
+}
+.dentro h1{
+    font-size: 32px;
+}
+.dentro p{
+    font-size: 18px;
+}
+
+.titulo2{
+    text-align: center;
+}
+.titulo2 h1{
+    font-size: 32px;
+    color: #181818;
+}
+.titulo2{
+    font-size: 18px;
+    color: #474747;
+    padding: 20px 0;
+}
+.titulo2 p{
+    padding: 10px;
+}
+
+section{
+    max-width: 1366px;
+    margin: auto;
+}
+.shop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    list-style-type: none;
+    margin: auto;
+    width: 90%;
+}
+.shop li{
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 17px 5px;
+    background-color: #EBE9EA;
+}
+.shop img{
+    padding: 50px 0 60px 0;
+    width: 100%;
+
+    transition: .5s;
+    cursor: pointer;
+}
+.shop img:hover{
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+
+    -webkit-filter: drop-shadow(8px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(8px 10px 5px rgba(0,0,0,.5));
+}
+footer{
+    margin-top: 50px;
+    background-color: #0C0C0C;
+    text-align: center;
+    color: #ffff;
+    font-size: 18px;
+    padding: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .apresentacao{
+        text-align: center;
+        justify-content: center;
+    }
+    .dentro{
+        margin: 0;
+    }
+    .shop li{
+        width: 100%;
+    }
+}

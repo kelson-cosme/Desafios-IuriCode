@@ -1,0 +1,381 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #293145;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .bola1{
+    width: 12px;
+    height: 12px;
+    background-color: #0F9AFE;
+    border-radius: 50%;
+}
+.bola2{
+    background-color: #293145;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+} */
+header{
+    display: flex;
+    justify-content: space-around;
+}
+.navegacao{
+    list-style-type: none;
+    display: flex;
+
+}
+.navegacao li{
+    padding: 15px;
+    cursor: pointer;
+
+    transition: ease-in-out .5s;
+}
+.navegacao li:hover{
+    background-color: #293145;
+    border-radius: 50px;
+    color: #ffff;
+}
+
+.corpo{
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #EFF8FF;
+    
+    padding: 35px;
+}
+.corpo h2{
+    font-size: 48px;
+}
+.corpo button{
+    background-color: #0F9AFE;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 100px;
+    color: #ffff;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+.conteudo{
+    max-width: 1366px;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+
+}
+.conteudo h1{
+    text-align: center;
+    font-size: 40px;
+}
+.imagens{
+    display: flex;
+    justify-content: space-around;
+}
+.imagens div{
+    margin-top: 50px;
+}
+
+.imagens h3{
+    font-size: 18px;
+    margin: 13px;
+}
+
+
+.app{
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EFF8FF;
+}
+.app div{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.app h1{
+    font-size: 32px;
+}
+.lojas{
+    list-style-type: none;
+    display: flex;
+}
+.lojas li{
+    margin: 5px;
+}
+
+.planos{
+    text-align: center;
+    max-width: 1366px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.planos h1{
+    font-size: 40px;
+}
+
+.precos{
+    display: flex;
+}
+.precos h2{
+    margin: 40px 0;
+    font-size: 50px;
+}
+.precos button{
+    margin-top: 40px;
+    background-color: #0F9AFE;
+    color: #ffff;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 100px;
+}
+.precos{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.precos div{
+    padding: 40px;
+    width: 25%;
+    border-radius: 10px;
+}
+.black{
+    background-color: #293145;
+}
+.blue{
+    background-color: #EFF8FF;
+}
+.titulo{
+    font-size: 30px;
+}
+.preferido{
+    background-color: #0F9AFE;
+    padding: 10px 10px;
+    border-radius: 100px;
+}
+.black h2, .black p{
+    color: #ffff;
+}
+
+
+
+footer{
+    height: 350px;
+    max-width: 1366px;
+    margin: auto;
+    background-image: url("/imgs/unsplash_psGV5KhidlY.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+}
+footer h1{
+    color: #EFF8FF;
+    font-size: 40px;
+}
+footer p{
+    color: #EFF8FF;
+}
+.contato{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.email{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin: 30px 0 10px 0;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+} 
+.enviar{
+    background-color: #0F9AFE;
+    border: none;
+    padding: 10px 30px;
+    color: #EFF8FF;
+    border-radius: 100px;
+}
+.rodape{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 767px){
+    .active{
+        transition: 1s;
+        transform: translateX(0);
+        opacity: 1;
+        display: flex;
+
+    }
+    .navegacao{
+        transform: translateX(100%);
+        /* opacity: 0; */
+
+    }
+    
+    #menu div{
+        width: 40px;
+        height: 4px;
+        background: #293145;
+        margin: 7px;
+        border-radius: 10px;
+        transition: .5s;
+
+    }
+    #navegacao{
+        display: none;
+        list-style-type: none;
+
+        position: absolute;
+        background-color: #293145;
+        right: 0;
+        flex-direction: column;
+        width: 100vw;
+
+        transition: .7s;
+    }
+    #navegacao li{
+        padding: 15px;
+        color: #fff;
+
+        transition: .5s;
+    }
+    #navegacao li:hover{
+        padding: 20px;
+        background-color: #fff;
+        color: #293145;
+    }
+    .corpo{
+        flex-direction: column-reverse;
+
+    }
+    .corpo div{
+        width: 100%;
+    }
+    .corpo img{
+        width: 100%;
+    }
+    .imagens{
+        flex-direction: column;
+    }
+    
+    .precos{
+        flex-direction: column;
+    }
+    .precos div{
+        width: 70%;
+        margin: 10px auto;
+    }
+    .app{
+        flex-direction: column-reverse;
+    }
+    .app div{
+        width: 90%;
+    }
+   
+
+
+     /*Animação do botao de menu*/
+     #line1.ativar{
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    #line2.ativar2{
+        opacity: 0;
+    }
+    #line3.ativar3{
+        transform: rotate(45deg) translate(-8px, -7px);
+    }
+}
+@media screen and (max-width: 864px) {
+    .corpo{
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 950px){
+
+    .active{
+        transition: 1s;
+        transform: translateX(0);
+        opacity: 1;
+        display: flex;
+
+    }
+    .navegacao{
+        transform: translateX(100%);
+        /* opacity: 0; */
+
+    }
+    
+    #menu div{
+        width: 40px;
+        height: 4px;
+        background: #293145;
+        margin: 7px;
+        border-radius: 10px;
+        transition: .5s;
+
+    }
+    #navegacao{
+        display: none;
+        list-style-type: none;
+
+        position: absolute;
+        background-color: #293145;
+        right: 0;
+        flex-direction: column;
+        width: 100vw;
+
+        transition: .7s;
+    }
+    #navegacao li{
+        padding: 15px;
+        color: #fff;
+
+        transition: .5s;
+    }
+    #navegacao li:hover{
+        padding: 20px;
+        background-color: #fff;
+        color: #293145;
+    }
+    .precos{
+        flex-direction: column;
+    }
+    .precos div{
+        width: 70%;
+        margin: auto;
+    }
+ 
+
+     /*Animação do botao de menu*/
+     #line1.ativar{
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    #line2.ativar2{
+        opacity: 0;
+    }
+    #line3.ativar3{
+        transform: rotate(45deg) translate(-8px, -7px);
+    }
+    /*----------------------*/
+}
