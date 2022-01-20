@@ -10,7 +10,6 @@
 
 <br>
 
-<img src= " projetosProntos/desafio1/blog.png">
 
 <br>
 
@@ -21,30 +20,42 @@
 
 ## ✨ Desafio 1 - IuriCode (Blog de Notícias) 💻
 <br>
-<img src="./desafio-01/assets/design/codelandia.jpg">
+<img src= "./projetosProntos/desafio1/blog.png">
+
+<br>
+
+## Versão Mobile 📱
+<br>
+<img src= "./projetosProntos/desafio1/blog-mobile.png">
+
+<br>
+
+<br>
 
 ### Status: Concluído ✅
-### 🧐 Confira o resultado <a href="https://codelandia-blog-torrico.netlify.app" target="_blank">aqui</a> 🧐
+### 🧐 Confira o resultado <a href="https://blog-desafio1.netlify.app" target="_blank">aqui</a> 🧐
+-----------------------------------------------------------------------------------------
+<br>
+<br>
 
-<br>
-<br>
+
 
 ## ✨ Desafio 2 - IuriCode (JordanShoes) 💻
 <br>
-<img src="./desafio-02/assets/design/jordanshoes.jpg">
+<img src= "./projetosProntos/desafio2/jordanshoes.png">
+
+<br>
+
+## Versão Mobile 📱
+<br>
+<img src= "./projetosProntos/desafio2/jordanshoes-mobile.png">
+
+<br>
+
+<br>
 
 ### Status: Concluído ✅
-### 🧐 Confira o resultado <a href="https://jordanshoes-torrico.netlify.app" target="_blank">aqui</a> 🧐
-
-<br>
-<br>
-
-## ✨ Desafio 3 - IuriCode (OnePage) 💻
-<br>
-<img src="./desafio-03/assets/design/onepage.jpg">
-
-### Status: Concluído ✅
-### 🧐 Confira o resultado <a href="https://one-page-torrico.netlify.app" target="_blank">aqui</a> 🧐
-
+### 🧐 Confira o resultado <a href="https://jordanshoes-desafio2.netlify.app" target="_blank">aqui</a> 🧐
+-----------------------------------------------------------------------------------------
 <br>
 <br>
