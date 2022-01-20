@@ -22,9 +22,6 @@
 <br>
 <img src= "./projetosProntos/desafio1/blog.png">
 
-<br>
-<br>
-
 ### Status: Concluído ✅
 ### 🧐 Confira o resultado <a href="https://blog-desafio1.netlify.app" target="_blank">aqui</a> 🧐
 -----------------------------------------------------------------------------------------
@@ -36,9 +33,6 @@
 ## ✨ Desafio 2 - IuriCode (JordanShoes) 💻
 <br>
 <img src= "./projetosProntos/desafio2/jordanshoes.png">
-
-<br>
-<br>
 
 ### Status: Concluído ✅
 ### 🧐 Confira o resultado <a href="https://jordanshoes-desafio2.netlify.app" target="_blank">aqui</a> 🧐
