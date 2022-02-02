@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    height: 100%;
+    overflow: hidden;
+
+    background-image: url("/imgs/Image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+article{
+    width: 100%;
+    height: 100%;
+    background-color: #121214;
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+    color: #A8A8A8;
+
+    transition: 1s;
+}
+.cabecalhoLogin{
+    background-color: #121214;
+    color: #fff;
+}
+.dentroCabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: calc(100% - 6.410256410256411vw);
+    padding: 1vw 0;
+}
+.cabecalhoLogin h1{
+    font-family: 'Mukta', sans-serif;
+    font-size: 2vw;
+    background-image: linear-gradient(to left,#FF267A, #FFA634);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.cabecalhoLogin p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vw;
+}
+
+.corpo1 h1{
+    margin: 2vw 0 1vw 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 5vw;
+    color: #fff;
+}
+.corpo1 p{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+.login div{
+    width: 19.23076923076923vw;
+    margin: auto;
+}
+.login img{
+    border-radius: 19.23076923076923vw;
+    width: 100%;
+}
+.login p{
+    font-family: 'Open Sans', sans-serif;
+    color: #A8A8A8;
+    font-weight: 400;
+    font-size: 2vw;
+}
+
+.corpo1 button{
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffff;
+    background-color: #181818;
+    padding: 1.2vw 5.12vw;
+    font-weight: 600;
+    font-size: 1.9vw;
+}
+
+
+
+
+
+
+.metade1{
+    height: 45vh;
+}
+.metade2{
+    height: 50vh;
+}
+.corpo{
+   color: #fff;
+    margin: auto;
+    height: 100%;
+}
+.corpo header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: calc(100% - 6vw);
+    margin: auto;
+}
+
+.corpo header h1{
+    font-family: 'Mukta', sans-serif;
+    font-size: 2.5vw;
+    background-image: linear-gradient(to left,#FF267A, #FFA634);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.corpo header ul{
+    list-style-type: none;
+
+    display: flex;
+}
+.corpo li{
+    margin-left: 4vw;
+}
+.corpo header p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.corpo header img{
+    width: 2vw;
+}
+.filme{
+    width: calc(100% - 6vw);
+    margin: auto;
+}
+.categoria{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1vw;    
+    padding: 0.3vw 1vw;
+    background-color: #121214;
+    display: inline-block;
+    color: #FFA634;
+    border-radius: 0 10px 0 10px;
+}
+.estrelas{
+    display: flex;
+    align-items: center;
+    margin-bottom: -1.5vw;
+}
+.estrelas img{
+    margin: 0 -1vw;
+    width: 3.9vw;
+}
+.duracao{
+    display: flex;
+    align-items: center;
+    margin-left: 1vw;
+}
+.duracao img{
+    margin: 0;
+    width: 1.9vw;
+}
+.duracao p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+}
+.descricao h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.1vw;
+    font-weight: 600;
+}
+.descricao p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1vw;
+}
+button{
+    border: none;
+    background-color: #FFA634;
+    padding: 0.5vw 3vw;
+    border-radius: 0.2vw;
+    margin-top: 0.5vw;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+
+.catalogo{
+    width: calc(100% - 6vw);
+    margin: auto;
+}
+.catalogo h1{
+    width: 4.7vw;
+    border-bottom: 0.2vw solid #FFA634;
+    display: inline-block;
+    font-size: 2vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 0.7vw 0;
+}
+.catalogo ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.listaFilme{
+    display: none;
+}
+
+.catalogo li{
+    width: 13vw;
+    height: 17.5vw;
+    margin: 0;
+    z-index: 0;
+}
+.titulo{
+    width: 11vw;
+    height: 15.5vw;
+    padding: 1vw;
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+.titulo p{
+    width: 4.8vw;
+    padding: 0.3vw;
+    border-radius: 0 10px 0 10px;
+    background-color: #121214;
+
+    font-size: 1vw;
+    color: #FFA634;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.titulo h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+
+.stars{
+    margin: 0;
+    padding: 0;
+
+}
+.stars img{
+    width: 1vw;
+}
+
+
+.f1{
+    background-size: cover;
+    background-image: url("/imgs/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New\ 2.png");
+    background-position: center;
+}
+.f2{
+    background-image: url("/imgs/Rectangle\ 8.png");
+    background-size: cover;
+    background-position: center;
+}
+.f3{
+    background-image: url("/imgs/1055866470-loki-poster-oficial-1\ 1.png");
+    background-size: cover;
+    background-position: center;
+}
+.f4{
+    background-image: url("/imgs/FCUzyDmVUAA8soy\ 1.png");
+    background-size: cover;
+    background-position: center;
+}
+.f5{
+    background-image: url("/imgs/poster-impresso-the-witcher-netflix-loja\ 1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+footer{
+    background-color: #121214;
+    /* padding: .5vw 0; */
+}
+footer h1{
+    font-size: 1.5vw;
+    font-family: 'Mukta', sans-serif;
+}
+footer ul{
+    display: flex;
+    list-style-type: none;
+}
+.dentro{
+    display: flex;
+    align-items: center;
+    width: calc(100% - 6.410256410256411vw);
+    margin: auto;
+    justify-content: space-between;
+}
+.dentro img{
+    width: 2vw;
+}
+
+
+.active{
+    transform: translateX(100%);
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .metade1{
+        height: 43%;
+    }
+    .metade2{
+        height: 52%;
+    }
+    footer{
+        height: 5%;
+    }
+
+    #logar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .dentroCabecalho h1{
+        font-size: 10vw;
+    }
+    .dentroCabecalho p{
+        font-size: 8vw;
+    }
+   .corpo1 h1{
+       font-size: 7vw;
+   }
+   .corpo1 p{
+       font-size: 3vw;
+   }
+
+
+    /* ------------------------------ */
+   /* Cabecalho */
+   .corpo header h1{
+        font-size: 10vw;
+    }
+    .corpo header p{
+        font-size: 4vw;
+    }
+    /* -------------------- */
+
+    /* Corpo */
+    .categoria{
+        font-size: 5vw;
+    }
+    .estrelas img{
+        width: 10vw;
+    }
+    .duracao img{
+        width: 5vw;
+    }
+    .duracao p{
+        font-size: 5vw;
+    }
+    .descricao h1{
+        font-size: 10vw;
+    }
+    .descricao p{
+        font-size: 3vw;
+    }
+    .descricao button{
+        font-size: 5vw;
+    }
+    /* ------------------ */
+
+    /* Catálogo */
+    .catalogo h1{
+        font-size: 7vw;
+        width: 19vw;
+    }
+
+    .catalogo ul{
+        background-color: #FFA634;
+        display: none;
+    }
+
+
+    .listaFilme{
+        display: block;
+        height: 354px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+
+    }
+    footer h1{
+        font-size: 5vw;
+    }
+    .dentro img{
+        width: 5vw;
+    }
+    
+}
