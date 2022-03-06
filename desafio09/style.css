@@ -230,12 +230,15 @@ footer a{
         width: calc(100% - 20px);
         padding: 10px;
     }
+    
     #menuMobile div{
         width: 35px;
         height: 4px;
         margin: 4px;
         border-radius: 10px;
         background-color: #00DF5E;
+        transition: .6s;
+
     }
     #menu{
         position: fixed;
@@ -250,6 +253,7 @@ footer a{
         transform: translateX(100%);
         transition: .5s;
         z-index: 2;
+        opacity: 0;
     }
     #menu li{
         margin: 0;
@@ -263,6 +267,7 @@ footer a{
     }
     .active{
         transform: translateX(0);
+        opacity: 1;
     }
     .cheio{
         width: 100%;
@@ -317,6 +322,16 @@ footer a{
         margin-bottom: 20px;
     }
     footer{
-    margin-top: 100px;
+        margin-top: 100px;
+    }
+
+    #line1.ativar{
+        transform: rotate(-45deg) translate(-1px, 8px);
+    }
+    #line2.ativar2{
+        opacity: 0;
+    }
+    #line3.ativar3{
+        transform: rotate(45deg) translate(-3px, -10px);
     }
 }
