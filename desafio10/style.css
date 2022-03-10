@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500&display=swap');
+/* font-family: 'Lexend Deca', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+/* font-family: 'Inter', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #13131F;
+}
+body, html{
+    height: 100%;
+}
+.corpo{
+    max-width: 1366px;
+    margin: auto;
+    color: #fff;
+}
+header{
+    width: calc(100% - 10vw);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    color: #8257E6;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+
+}
+.navegacao{
+    list-style-type: none;
+    display: flex;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.navegacao li{
+    padding: 25px;
+}
+/* -------------------- */
+.apresentacao{
+    width: calc(100% - 10vw);
+    margin: auto;
+    margin-top: 70px;
+}
+.apresentacao h1{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+.apresentacao p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #C4C4C4;
+}
+/* ----------------------- */
+.principal{
+    width: calc(100% - 10vw);
+    margin: auto;
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.principal div{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.p1{
+    width: 68%;
+    height: 350px;
+
+    background-image: url("/imgs/877562\ 1_Easy-Resize.com.jpg");
+
+}
+.divisoria{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.p2{
+    width: 100%;
+    height: 49%;
+
+    background-image: url("/imgs/98677e90349dff1d04519b1cebc0d02a\ 1_Easy-Resize.com.jpg");
+}
+.p3{
+    width: 100%;
+    height: 48%;
+
+    background-image: url("/imgs/ElTI-Q0UcAA3EFg\ 1_Easy-Resize.com.jpg");
+}
+/* ---------------------- */
+.posts{
+    width: calc(100% - 10vw);
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.noticias{
+    width: 68%;
+    height: 900px;
+    font-size: 40px;
+
+    overflow: auto;
+}
+
+.outros{
+    width: 31%;
+}
+/* ----------------------- */
+
+
+
+.dentroNoticias{
+    width: 100%;
+    display: flex;
+    
+    margin-bottom: 30px;
+}
+.imagens{
+    width: 28%;
+    height: 150px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagens img{
+    width: 100%;
+}
+.descricao{
+    width: 60%;
+
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.descricao h2{
+    font-size: 13px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #FEFBFB;
+    font-weight: 400;
+}
+.descricao p{
+    font-size: 11px;
+    font-family: 'Inter', sans-serif;
+    color: #C4C4C4;
+    font-weight: 400;
+}
+.mais{
+    background-color: #8257E6;
+    border: none;
+    color: #FEFBFB;
+    width: 30%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+/* Imagens de fundo */
+.n1{
+    background-image: url("/imgs/thumb-1920-1133039\ 1_Easy-Resize.com.jpg");
+}
+.n2{
+    background-image: url("/imgs/thumb-1920-678085\ 1_Easy-Resize.com.jpg");
+}
+.n3{
+    background-image: url("/imgs/minecraft-vendas\ 1_Easy-Resize.com.jpg");
+}
+.n4{
+    background-image: url("/imgs/harry-potter-wallpapers-desktop-86788224\ 1_Easy-Resize.com.jpg");
+}
+.n5{
+    background-image: url("/imgs/supernatural\ 1_Easy-Resize.com.jpg");
+}
+
+/* Barra de rolagem */
+
+.noticias::-webkit-scrollbar {
+    width: 11px;               /* width of the entire scrollbar */
+}
+  
+.noticias::-webkit-scrollbar-track {
+    background: #282830;        /* color of the tracking area */
+}
+  
+.noticias::-webkit-scrollbar-thumb {
+    background-color: #8257E6;    /* color of the scroll thumb */
+    border: 2px solid #282830; 
+}
+
+
+
+
+/* Lado direito */
+.outros h1{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FEFBFB;
+
+    width: 70%;
+    border-bottom: 3px solid #8257E6;
+}   
+
+.listaOutros{
+    list-style-type: none;
+}
+.listaOutros li{
+    height: 250px;
+    display: flex;
+
+    margin-top: 30px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.outrosDentro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 10px;
+    background-color: #13131f60;
+}
+
+/* Imagens de fundo outros */
+.o1{
+    background-image: url("/imgs/A-Viagem-de-Chihiro-chihiro-e-haku\ 1_Easy-Resize.com.jpg");
+}
+.o2{
+    background-image: url("/imgs/cena-do-filme-a-rede-social-2010-1547503577708_v2_1920x1204\ 1_Easy-Resize.com.jpg");
+}
+.o3{
+    background-image: url("/imgs/NarTrailer_Print09.max-1920x1200\ 1_Easy-Resize.com.jpg");
+}
