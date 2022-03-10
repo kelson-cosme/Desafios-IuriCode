@@ -240,6 +240,18 @@ header h1{
 
     padding: 10px;
     background-color: #13131f60;
+    height: calc(100% - 20px);
+}
+.outrosDentro p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+.outrosDentro p:first-of-type {
+    background-color: #8257E6;
+    padding: 5px 20px;
+    width: 40px;
+    border-radius: 3px;
 }
 
 /* Imagens de fundo outros */
@@ -251,4 +263,82 @@ header h1{
 }
 .o3{
     background-image: url("/imgs/NarTrailer_Print09.max-1920x1200\ 1_Easy-Resize.com.jpg");
+}
+
+/* ------------------------ */
+/* Mais Recentes */
+.recentes{
+    width: calc(100% - 10vw);
+    margin: auto;
+
+    margin: 20px auto 80px auto;
+
+}
+.recentes h1{
+    margin: 20px auto;
+
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Lexend Deca', sans-serif;
+    border-bottom: 3px solid #8257E6;
+    display: inline-block;    
+}
+.listaRecentes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    list-style-type: none;
+}
+.listaRecentes li{
+    width: 30%;
+
+    height: 250px;
+    display: flex;
+
+    margin-top: 30px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.r1{
+    background-image: url("/imgs/Vidas-ao-Vento-Naoko.png");
+}
+.r2{
+    background-image: url("/imgs/GTA-5-PlayStation-5-Rockstar-Games-Sony-2020_Easy-Resize.com.jpg");
+}
+.r3{
+    background-image: url("/imgs/Vikings-Série-Derivada_Easy-Resize.com.jpg");
+}
+.r4{
+    background-image: url("/imgs/soul-disney-pixar-1220-1400x800-5_Easy-Resize.com.jpg");
+}
+.r5{
+    background-image: url("/imgs/your-name-2\ 1_Easy-Resize.com.jpg");
+}
+.r6{
+    background-image: url("/imgs/key-visual\ 1_Easy-Resize.com.jpg");
+}
+
+
+/* ----------------------- */
+/* Rodapé */
+footer{
+    text-align: center;
+}
+footer h1{
+    font-size: 24px;
+    color: #8257E6;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+footer p{
+    font-family: 'Inter', sans-serif;
+    color: #C4C4C4;
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 30px;
 }
