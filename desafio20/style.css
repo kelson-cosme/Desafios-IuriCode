@@ -27,6 +27,9 @@ header{
   color: #fff;
   background-color: #121212;
 }
+#menu-mobile{
+  display: none;
+}
 .navegacao{
   list-style-type: none;
   display: flex;
@@ -92,7 +95,6 @@ svg{
   align-items: center;
   justify-content: center;
 
-  padding: 8px 29px;
   transition: .3s;
 }
 .social a{
@@ -102,6 +104,7 @@ svg{
 
 .primeiro{
   border: 2px solid;
+  padding: 8px 29px;
   border-image: linear-gradient(90deg, rgba(54,255,0,0.7035189075630253) 39%, rgba(5,149,230,0.7315301120448179) 100%) 1;
   margin: 30px 30px 0  0;
 }
@@ -114,6 +117,9 @@ svg{
   border: 2px solid;
   border-image: linear-gradient(90deg, rgba(5,149,230,0.6895133053221288) 50%, rgba(54,255,0,0.7819502801120448) 100%) 1;
   margin-top: 30px;
+
+  padding: 8px 37px;
+
 }
 .segundo:hover{
   box-shadow: 0 0 10px 0 rgba(5,149,230,0.7315301120448179) inset, 0 0 10px 4px rgba(54,255,0,0.7819502801120448);
@@ -189,6 +195,16 @@ path{
   .navegacao{
     display: none;
   }
+  #menu-mobile{
+    display: block;
+  }
+  #menu-mobile div{
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+  }
+
   .apres-left{
     width:var(--tamanho);
     padding-left: 0;
