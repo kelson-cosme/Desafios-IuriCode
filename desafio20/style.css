@@ -14,7 +14,8 @@
   margin: auto;
 }
 body{
-  background-color: #121212;
+  background-color: #0C0C0C;
+
 }
 
 header{
@@ -25,7 +26,7 @@ header{
   align-items: center;
   justify-content: space-between;
   color: #fff;
-  background-color: #121212;
+  background-color: #0C0C0C;
 }
 #menu-mobile{
   display: none;
@@ -119,7 +120,6 @@ svg{
   margin-top: 30px;
 
   padding: 8px 37px;
-
 }
 .segundo:hover{
   box-shadow: 0 0 10px 0 rgba(5,149,230,0.7315301120448179) inset, 0 0 10px 4px rgba(54,255,0,0.7819502801120448);
@@ -186,6 +186,54 @@ path{
     100% { opacity: 0; }
 }
 
+/* ------------------ */
+.sobre-fora{
+  background-color: #121212;
+}
+.sobre{
+  width: var(--tamanho);
+  margin: auto;
+  color: #fff;
+  background-color: #121212;
+  padding: 100px 0;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sobre-left{
+  background-color: #0C0C0C;
+  width: 25%;
+  border-left: 4px solid rgba(54,255,0,0.7035189075630253);
+}
+
+.sobre-right{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.sobre-right h1{
+  font-weight: 600;
+  font-size: 24px;
+}
+.sobre h2{
+  font-weight: 500;
+  font-size: 20px;
+
+  margin: 20px 0;
+}
+.sobre p{
+  font-weight: 300;
+  font-size: 18px;
+  color: #C4C4C4;
+}
+.sobre img{
+  width: 100%;
+}
+
+
+
+
 
 
 @media screen and (max-width:767px) {
@@ -215,6 +263,5 @@ path{
     position: absolute;
   }
   .social{
-    flex-wrap: wrap;
   }
 }
