@@ -230,7 +230,20 @@ path{
 .sobre img{
   width: 100%;
 }
+/* --------------- */
+/* Experiencia */
+.experiencia{
+  color: #ffff;
+  display: flex;
+  justify-content: space-around;
+}
+.list-exp{
+  list-style-type: none;
+}
 
+.bordas{
+  border: 2px solid red;
+}
 
 
 
@@ -263,5 +276,12 @@ path{
     position: absolute;
   }
   .social{
+    flex-wrap: wrap;
+  }
+  .sobre{
+    flex-direction: column;
+  }
+  .sobre div{
+    width: 100%;
   }
 }
