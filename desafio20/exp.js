@@ -1,23 +1,23 @@
 const lista = document.getElementById("lista");
 let resultado = document.getElementById("resultado")
+let todos = document.querySelectorAll(".todos");
 
 function procurar(event){
 
+    texto[event.target.value](); //pegar evento do click
 
-    texto[event.target.value]();
+    let a = event.target.id //evento do click em uma variavel
+    let b = document.getElementById(a); //pegar o id do elemento com click
+  
 
-    let a = event.target.id
-    let b = document.getElementById(a);
-    
-    if(b.className == ""){
-        b.classList.add("bordas")
-    } 
+    for(let t = 0; t < todos.length; t++){
+        if(todos[t].className == "todos bordas-none"){
+            b.classList.add("bordas")
+        } else {
+            todos[t].classList.remove("bordas")
+        }
 
-
-
-    // else{
-    //     b.classList.remove("bordas")
-    // }
+    }
 }
 
 
@@ -30,5 +30,4 @@ const texto = {
     '6': () => resultado.innerHTML = "teste6",
 
 }
-
 lista.addEventListener("click", procurar)

@@ -234,15 +234,39 @@ path{
 /* Experiencia */
 .experiencia{
   color: #ffff;
-  display: flex;
   justify-content: space-around;
 }
+.experiencia h1{
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.exp-dentro{
+  width: var(--tamanho);
+  display: flex;
+  margin: auto;
+
+}
 .list-exp{
+  margin-top: 10px;
   list-style-type: none;
+  font-weight: 500;
+  font-size: 16px;
+
+  transition: 1s;
+}
+.list-exp li{
+  padding: 15px;
+  transition: .2s;
+  transition-timing-function: linear;
+
 }
 
+.bordas-none{
+  border-left: 4px solid #151515;
+}
 .bordas{
-  border: 2px solid red;
+  border-left: 4px solid #00D2DF;
 }
 
 
