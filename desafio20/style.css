@@ -236,16 +236,17 @@ path{
   color: #ffff;
   justify-content: space-around;
 }
-.experiencia h1{
-  margin-left: 30px;
-  font-weight: 600;
-  font-size: 24px;
-}
 .exp-dentro{
   width: var(--tamanho);
   display: flex;
   margin: auto;
 
+}
+/* ----------------- */
+.experiencia h1{
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 24px;
 }
 .list-exp{
   margin-top: 10px;
@@ -255,19 +256,56 @@ path{
 
   transition: 1s;
 }
+
 .list-exp li{
   padding: 15px;
   transition: .2s;
   transition-timing-function: linear;
-
+  cursor: pointer;
 }
-
 .bordas-none{
   border-left: 4px solid #151515;
 }
 .bordas{
-  border-left: 4px solid #00D2DF;
+  border-left: 4px solid rgba(54,255,0,0.7035189075630253);
 }
+#l6{ 
+  display: none;
+}
+
+/* -------------------- */
+.exp-right{
+  margin-left: 30px;
+  width: 70%;
+}
+.exp-right h1{
+  margin-left: 0;
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 10px;
+}
+.titulo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.data{
+  font-size: 16px;
+  line-height: 24px;
+}
+.local{
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(54,255,0,0.7035189075630253);
+  margin: 20px 0;
+}
+.funcao{
+  font-weight: 300;
+  font-size: 18px;
+  color: #C4C4C4;
+}
+
+
 
 
 
@@ -308,4 +346,18 @@ path{
   .sobre div{
     width: 100%;
   }
+
+  /* ------------ */
+  .exp-dentro{
+    flex-direction: column;
+    width: 85%;
+  }
+  .list-exp{
+    display: flex;
+    overflow: auto;
+  }
+  .list-exp li{
+    width: 5px;
+  }
+
 }
