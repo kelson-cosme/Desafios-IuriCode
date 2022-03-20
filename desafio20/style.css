@@ -235,24 +235,25 @@ path{
 .experiencia{
   color: #ffff;
   justify-content: space-around;
+  padding: 50px 0;
+}
+.experiencia h1{
+  margin-bottom: 20px;
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 24px;
 }
 .exp-dentro{
   width: var(--tamanho);
   display: flex;
   margin: auto;
-
-}
-/* ----------------- */
-.experiencia h1{
-  margin-left: 30px;
-  font-weight: 600;
-  font-size: 24px;
 }
 .list-exp{
   margin-top: 10px;
   list-style-type: none;
   font-weight: 500;
   font-size: 16px;
+  margin-right: 35px;
 
   transition: 1s;
 }
@@ -348,16 +349,28 @@ path{
   }
 
   /* ------------ */
+  .exp-left{
+    overflow: auto;
+  }
   .exp-dentro{
     flex-direction: column;
     width: 85%;
   }
   .list-exp{
-    display: flex;
-    overflow: auto;
+    display: inline-flex;
+    margin: 0;
   }
   .list-exp li{
-    width: 5px;
+    padding: 20px;
+    width: 130px;
+    text-align: justify;
   }
-
+  .exp-right{
+    width: 100%;
+    margin: auto;
+    transition: 9s;
+  }
+  .titulo p{
+    transition: 9s;
+  }
 }
