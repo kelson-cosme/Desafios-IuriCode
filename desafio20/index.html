@@ -474,29 +474,16 @@
       <section class="projetos">
         <h1>PROJETOS</h1>
       
-        <ul class="list-projetos">
-          <li>
-            <div class="img-projetos"><img src="" alt=""></div>
-            
-            <div class="descricao">
-              <h1>Nome do projeto</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
-
-              <p><a href="#">Tecnologias usadas no projeto</a></p>
-
-              <button class="links">  
-                <img src="/imgs/link.png" alt="">
-                Visualizar
-              </button>
-            </div> 
+        <ul id="projetos" class="list-projetos">
 
 
           <li>
-            <div class="card">
-              <div id="cards" class="fechar">
-                <div></div>
-                <div></div>
-                <div></div>
+
+            <div id="cards" class="card">
+              <div value = 0 onclick="cards(event)" id="fechar" class="fechar">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
               </div>
 
               <div>
@@ -509,32 +496,95 @@
 
             </div>
 
+
             <div class="img-projetos"><img src="" alt=""></div>
             
             <div class="descricao">
               <h1>Nome do projeto</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
 
-              <p><a href="#">Tecnologias usadas no projeto</a></p>
+              <button class="botao" value="0" class="links" onclick="cards()">Tecnologias usadas no projeto
+              </button>
 
               <button class="links">  
                 <img src="/imgs/link.png" alt="">
                 Visualizar
               </button>
             </div> 
-          </li>
 
 
+
+
+            
           <li>
+            <div id="cards" class="card">
+              <div value = 1 onclick="cards(event)" id="fechar" class="fechar">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+
+              <div>
+                <div class="aaa">
+                  <img width="70px" src="/imgs/html-logo.png" alt="">
+                  <img width="70px" src="/imgs/html-logo.png" alt="">
+                  <img width="70px" src="/imgs/html-logo.png" alt="">
+                </div>
+              </div>
+            </div>
+
+
             <div class="img-projetos"><img src="" alt=""></div>
             
             <div class="descricao">
               <h1>Nome do projeto</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
 
-              <p><a href="#">Tecnologias usadas no projeto</a></p>
+              <button class="botao" value="1" class="links" onclick="cards(event)">Tecnologias usadas no projeto
+              </button>
 
               <button class="links">  
+                <img src="/imgs/link.png" alt="">
+                Visualizar
+              </button>
+            </div> 
+
+          </li>
+
+
+
+
+
+          <li>
+
+            <div id="cards" class="card">
+              <div value="2" onclick="cards(event)" id="fechar" class="fechar">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+
+              <div>
+                <div class="aaa">
+                  <img width="70px" src="/imgs/html-logo.png" alt="">
+                  <img width="70px" src="/imgs/html-logo.png" alt="">
+                  <img width="70px" src="/imgs/html-logo.png" alt="">
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="img-projetos"><img src="" alt=""></div>
+            
+            <div class="descricao">
+              <h1>Nome do projeto</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
+
+              <button class="botao" value="2" class="links" onclick="cards()">Tecnologias usadas no projeto
+              </button>
+
+              <button  class="links">  
                 <img src="/imgs/link.png" alt="">
                 Visualizar
               </button>
@@ -549,28 +599,8 @@
   </section>
 </body>
 
-<script>
-  	var i = 0;
-// var A = 0;
-		var tag = document.getElementById("text");
-		var html = document.getElementById("text").innerHTML;
-		var attr = tag.setAttribute("data", html);
-		var txt = tag.getAttribute("data");
-		var speed = 250;
-
-		function typeWriter() {
-		  if (i <= txt.length) {
-		    document.getElementById("text").innerHTML = txt.slice(0 , i + 1);
-		    i++;
-		    setTimeout(typeWriter, speed);
-		  }
-		}
-
-typeWriter();
-
-
-
-</script>
+<script src="/nome.js"></script>
+<script src="/cards.js"></script>
 <script src="/exp.js"></script>
 
 </html>

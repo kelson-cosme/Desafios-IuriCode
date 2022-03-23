@@ -371,7 +371,7 @@ path{
   border-radius: 20px;
 
 
-  box-shadow: 30px -16px rgba(54,255,0,0.7035189075630253);
+  box-shadow: 16px -16px rgba(54,255,0,0.7035189075630253);
 }
 
 .descricao{
@@ -384,6 +384,15 @@ path{
   height: 200px;
   border-left: 4px solid rgba(54,255,0,0.7035189075630253);
   border-radius: 10px;
+}
+.botao{
+  font-weight: 500;
+  font-size: 14px;
+
+  color: rgba(54,255,0,0.7035189075630253);
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
 }
 .links{
   background-color: #151515;
@@ -418,6 +427,22 @@ path{
   flex-direction: column;
   align-items: flex-end;
 }
+.fechar div{
+  width: 30px;
+  height: 3px;
+  margin: 2px;
+  background-color: #ffff;
+}
+.line1{
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+.line2{
+  opacity: 0;
+}
+.line3{
+  transform: rotate(45deg) translate(-2px, -1px);
+}
+
 .aaa{
   display: flex;
   flex-direction: column;
@@ -426,12 +451,7 @@ path{
 .aaa img{
   margin: 20px;
 }
-.fechar div{
-  width: 30px;
-  height: 3px;
-  margin: 2px;
-  background-color: #ffff;
-}
+
 .cardFechar{
   transform: translateY(0);
 }
@@ -498,4 +518,16 @@ path{
   .titulo p{
     transition: 9s;
   }
+
+  /* projetos------------ */
+  .projetos{
+    width: 90%
+  }
+  .list-projetos{
+    flex-direction: column;
+  }
+  .list-projetos li{
+    width: 100%;
+  }
+
 }
