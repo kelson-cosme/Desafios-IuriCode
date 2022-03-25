@@ -16,6 +16,7 @@
 .corpo{
   max-width: 1366px;
   margin: auto;
+
 }
 body{
   background-color: #0C0C0C;
@@ -42,10 +43,23 @@ header{
   display: flex;
   font-weight: 500;
   font-size: 18px;
+}
+.navegacao a{
   color: #C4C4C4;
+  text-decoration: none;
 }
 .navegacao li{
   padding: 20px;
+
+  transition: 0.4s;
+}
+.navegacao li:hover{
+  text-decoration: underline;
+  color: #ffff;
+
+  background-color: rgba(54,255,0,0.7035189075630253);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  border-radius: 50px;
 }
 header h1{
   color: #00D2DF;
@@ -388,11 +402,13 @@ path{
 .botao{
   font-weight: 500;
   font-size: 14px;
+  cursor: pointer;
 
   color: rgba(54,255,0,0.7035189075630253);
   text-decoration: none;
   border: none;
   background-color: transparent;
+  margin-bottom: 25px;
 }
 .links{
   background-color: #151515;
@@ -426,6 +442,7 @@ path{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  cursor: pointer;
 }
 .fechar div{
   width: 30px;
@@ -456,27 +473,90 @@ path{
   transform: translateY(0);
 }
 
+/* Footer */
+footer{
+  width: var(--tamanho2);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #C4C4C4;
+
+  font-weight: 400;
+  font-size: 16px;
+  padding: 40px 0;
+}
+
 @media screen and (max-width:767px) {
+  header{
+    z-index: 99999;
+    position: fixed;
+    width: 100%;
+    padding: 0 20px;
+  }
+
   .apresentacao{
     flex-direction: column;
   }
-  .navegacao{
+  .preencher{
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
     display: none;
+  }
+  .navegacao{
+
+    flex-direction: column;
+    text-align: center;
+    background-color: #000000f1;
+    position: fixed;
+    top: 49px;
+    right: 0;
+    height: 100%;
+    width: 70%;
+
+    z-index: 9999;
+    transform: translateX(100%);
+
+    transition: .4s;
+  }
+  .active{
+    transform: translateX(0);
   }
   #menu-mobile{
     display: block;
+    padding: 10px 0;
   }
   #menu-mobile div{
     width: 40px;
     height: 3px;
     background-color: #fff;
     margin: 5px;
+    border-radius: 10px;
+
+    transition: .5s;
+  }
+
+
+  /* Efeito Menu Moblie */
+  /* -------------------------- */
+  #line1.ativar{
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  #line2.ativar2{
+    opacity: 0;
+  }
+  #line3.ativar3{
+    transform: rotate(45deg) translate(-3px, -4px);
   }
 
   .apres-left{
     width:var(--tamanho);
     padding-left: 0;
     margin-top: 150px;
+    padding-bottom: 100px;
   }
   .apres-right{
     top: 0;
@@ -491,6 +571,16 @@ path{
   .sobre div{
     width: 100%;
   }
+  .sobre-left{
+    margin: auto;
+    text-align: center;
+  }
+  .sobre-left img{
+    width: 70%;
+  }
+  .sobre-right h1{
+    margin-top: 20px;
+  }
 
   /* ------------ */
   .exp-left{
@@ -500,19 +590,28 @@ path{
     flex-direction: column;
     width: 85%;
   }
+  .experiencia h1{
+    margin-left: 20px;
+  }
   .list-exp{
     display: inline-flex;
     margin: 0;
   }
   .list-exp li{
     padding: 20px;
-    width: 130px;
+    width: 200px;
     text-align: justify;
+    border-left: none;
+    text-align: center;
+    }
+  .bordas{
+    border-left: none;
+    border-bottom: 4px solid rgba(54,255,0,0.7035189075630253);
+    background-color: #151515;
   }
   .exp-right{
     width: 100%;
     margin: auto;
-    transition: 9s;
     margin-top: 20px;
   }
   .titulo p{
@@ -527,7 +626,7 @@ path{
     flex-direction: column;
   }
   .list-projetos li{
-    width: 100%;
+    width: calc(100% - 2px);
   }
 
 }

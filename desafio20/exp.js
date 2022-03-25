@@ -100,7 +100,7 @@ const texto = {
     
         "<p class = 'local'>"+ "Digital House" +"</p>"+
     
-        "<p class='funcao'>" + "ddddddddddddddddddddddddconsectetur adipiscing elit. Quisque eu purus risus. Ut rutrum sollicitudin purus in accumsan. Proin at mattis metus. Nullam sit amet mauris condimentum, volutpat augue in, mattis urna." + "</p>"
+        "<p class='funcao'>" + "ddddddddddd dddconsectetur adipiscing elit. Quisque eu purus risus. Ut rutrum sollicitudin purus in accumsan. Proin at mattis metus. Nullam sit amet mauris condimentum, volutpat augue in, mattis urna." + "</p>"
     }
     `,
 
