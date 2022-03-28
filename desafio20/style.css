@@ -394,11 +394,35 @@ path{
 
 
 .img-projetos{
-  background-color: black;
-  height: 200px;
   border-left: 4px solid rgba(54,255,0,0.7035189075630253);
   border-radius: 10px;
+  height: 200px;
+  background-size: cover;
+
 }
+/* ---------------------------- */
+.img-projetos1{
+  background-image: url("/imgs/projetos/feliznatal.png");
+}
+.img-projetos2{
+  background-image: url("/imgs/projetos/jordanshoes.png");
+}
+.img-projetos3{
+  background-image: url("/imgs/projetos/kenai.png");
+}
+.img-projetos4{
+  background-image: url("/imgs/projetos/onePage.png");
+}
+.img-projetos5{
+  background-image: url("/imgs/projetos/portifolio.png");
+}
+.img-projetos6{
+  background-image: url("/imgs/projetos/rachi.png");
+}
+
+
+
+/* ----------------------------- */
 .botao{
   font-weight: 500;
   font-size: 14px;
