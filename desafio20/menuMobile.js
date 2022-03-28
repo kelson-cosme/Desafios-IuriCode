@@ -6,8 +6,8 @@ const linha1 = document.getElementById("line1");
 const linha2 = document.getElementById("line2");
 const linha3 = document.getElementById("line3");
 
-function navBar(){
-    if(nav.className != ""){
+function navBar(){ //função para aparecer o menu mobile
+    if(nav.className != ""){ 
         nav.classList.toggle("active")
 
         linha1.classList.toggle("ativar");
@@ -15,9 +15,9 @@ function navBar(){
         linha3.classList.toggle("ativar3");
 
 
-        if(nav.className == "navegacao active"){
-            document.body.style.overflow = "hidden"
-            preecher.style.display = "block"
+        if(nav.className == "navegacao active"){ 
+            document.body.style.overflow = "hidden" //desativar o scroll
+            preecher.style.display = "block" //apertar fora fecha o menu
         } else {
             document.body.style.overflow = "auto"
             preecher.style.display = "none"
