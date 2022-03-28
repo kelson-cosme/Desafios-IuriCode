@@ -16,19 +16,19 @@
       <h1>Portifólio</h1>
       <nav>
         <ul class="navegacao">
-          <a href="">
+          <a href="index.html" onclick="navBar()">
             <li>Home</li>
           </a>
 
-          <a href="">
+          <a href="#apresentacao" onclick="navBar()"> 
             <li>Sobre mim</li>
           </a>
 
-          <a href="">
+          <a href="#experiencia" onclick="navBar()">
             <li>Experiência</li>
           </a>
 
-          <a href="">
+          <a href="#projetos" onclick="navBar()">
             <li>Projetos</li>
           </a>
         </ul>
@@ -39,7 +39,6 @@
         <div id="line2"></div>
         <div id="line3"></div>
       </div>
-      
     </header>
 
     <section class="apresentacao">
@@ -50,14 +49,14 @@
 
 
         <ul class="social">
-          <a href="">
+          <a href="https://www.linkedin.com/in/kelson-cosme/" target="_blank">
             <li class="primeiro">
               <img src="/imgs/linkedin.png" alt="linkedin">
               <p>Linkedin</p>
             </li>
           </a>
 
-          <a href="">
+          <a href="https://github.com/kelson-cosme" target="_blank">
             <li class="segundo">
               <img src="/imgs/Vector.png" alt="github">
               <p>GitHub</p>
@@ -418,27 +417,29 @@
       </div>
     </section>
 
+    <div id="apresentacao"></div>
+    
     <section class="sobre-fora">
       <section class="sobre">
 
         <div class="sobre-left">
-          <img src="/imgs/kelson.png" alt="">
+          <img src="/imgs/kelson2.png" alt="">
         </div>
   
         <div class="sobre-right">
           <h1>SOBRE MIM</h1>
           <h2>Cuiabá - MT, Brasil</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id egestas dui. Nullam finibus aliquam enim quis faucibus. Aenean ac commodo dolor, nec bibendum velit.</p>
+          <p>Sou estudante de Engenharia da Computação, atualmente desenvolvo site de baixo porte, estou sempre em busca de evolução. Estou a procura de de vagas na minha área.</p>
   
           <ul class="social">
-            <a href="">
+            <a href="/curriculo/Kelson+_Cosme+_curriculo.pdf" target="_blank">
               <li class="primeiro">
                 <img src="/imgs/download-cloud.png" alt="Curriculo">
                 <p>Currículo</p>
               </li>
             </a>
   
-            <a href="">
+            <a href="mailto:kelson.almida123@gmail.com">
               <li class="segundo">
                 <img src="/imgs/mail.png" alt="email">
                 <p>Email</p>
@@ -450,7 +451,7 @@
     </section>
 
 
-    <section class="experiencia">
+    <section class="experiencia" id="experiencia">
       <h1>EXPERIÊNCIA</h1>
       
       <div class="exp-dentro">
@@ -458,12 +459,12 @@
         <div id="lista" class="exp-left">
 
           <ul class="list-exp">
-            <li id="l1" class="todos bordas-none bordas" value = "1">Digital House </li>
-            <li id="l2" class="todos bordas-none" value = "2"> Código Fonte TV</li>
-            <li id="l3" class="todos bordas-none" value = "3">Zuplae</li>
+            <li id="l1" class="todos bordas-none bordas" value = "1">Agion Tecnologia</li>
+            <li id="l2" class="todos bordas-none" value = "2"> Fórum da comarca de Rosário Oeste </li>
+            <!-- <li id="l3" class="todos bordas-none" value = "3">Zuplae</li>
             <li id="l4" class="todos bordas-none" value = "4">ContWeb</li>
             <li id="l5" class="todos bordas-none" value = "5">iuricode</li>
-            <li id="l6" class="todos bordas-none" value = "6">Freelancer</li>
+            <li id="l6" class="todos bordas-none" value = "6">Freelancer</li> -->
           </ul>
 
         </div>
@@ -484,13 +485,13 @@
         
     </section>
    
-    <div class="projetos-fora">
+    <div class="projetos-fora" id="projetos">
       <section class="projetos">
         <h1>PROJETOS</h1>
       
         <ul id="projetos" class="list-projetos">
 
-
+<!-- -------------------------------------------- -->
           <li>
             <div id="cards" class="card">
               <div value = 0 onclick="cards(event)" id="fechar" class="fechar">
@@ -519,10 +520,13 @@
               <button class="botao" value="0" class="links" onclick="cards()">Tecnologias usadas no projeto
               </button>
 
-              <button class="links">  
-                <img src="/imgs/link.png" alt="">
-                Visualizar
-              </button>
+              <a href="https://feliz-natal-desafio16.netlify.app/" target="_blank">
+                <button class="links">  
+                  <img src="/imgs/link.png" alt="">
+                  Visualizar
+                </button>
+              </a>
+
             </div> 
           </li>
 
@@ -555,10 +559,13 @@
               <button class="botao" value="1" class="links" onclick="cards(event)">Tecnologias usadas no projeto
               </button>
 
-              <button class="links">  
-                <img src="/imgs/link.png" alt="">
-                Visualizar
-              </button>
+              <a href="https://jordanshoes-desafio2.netlify.app/" target="_blank">
+                <button class="links">  
+                  <img src="/imgs/link.png" alt="">
+                  Visualizar
+                </button>
+              </a>
+
             </div> 
 
           </li>
@@ -595,10 +602,13 @@
               <button class="botao" value="2" class="links" onclick="cards()">Tecnologias usadas no projeto
               </button>
 
-              <button  class="links">  
-                <img src="/imgs/link.png" alt="">
-                Visualizar
-              </button>
+              <a href="https://kenai-desafio17.netlify.app" target="_blank">
+                <button class="links">  
+                  <img src="/imgs/link.png" alt="">
+                  Visualizar
+                </button>
+              </a>
+
             </div> 
           </li>
           
@@ -633,10 +643,13 @@
               <button class="botao" value="3" class="links" onclick="cards()">Tecnologias usadas no projeto
               </button>
 
-              <button class="links">  
-                <img src="/imgs/link.png" alt="">
-                Visualizar
-              </button>
+              <a href="https://onepage-desafio3.netlify.app" target="_blank">
+                <button class="links">  
+                  <img src="/imgs/link.png" alt="">
+                  Visualizar
+                </button>
+              </a>
+
             </div> 
           </li>
 
@@ -670,11 +683,14 @@
 
               <button class="botao" value="4" class="links" onclick="cards()">Tecnologias usadas no projeto
               </button>
+              
+              <a href="https://portifolio-desafio09.netlify.app" target="_blank">
+                <button class="links">  
+                  <img src="/imgs/link.png" alt="">
+                  Visualizar
+                </button>
+              </a>
 
-              <button class="links">  
-                <img src="/imgs/link.png" alt="">
-                Visualizar
-              </button>
             </div> 
           </li>
 
@@ -709,10 +725,13 @@
               <button class="botao" value="5" class="links" onclick="cards()">Tecnologias usadas no projeto
               </button>
 
-              <button class="links">  
-                <img src="/imgs/link.png" alt="">
-                Visualizar
-              </button>
+              <a href="https://rachi-desafio19.netlify.app/" target="_blank">
+                <button class="links">  
+                  <img src="/imgs/link.png" alt="">
+                  Visualizar
+                </button>
+              </a>
+
             </div> 
           </li>
 
@@ -724,8 +743,8 @@
     </div>
 
     <footer>
-      <h2>@ 2022 - Iuri Silva</h2>
-      <h2>Powered by</h2>
+      <h2>@ 2022 - Kelson Cosme</h2>
+      <h2>Powered by <span>Me</span></h2>
     </footer>
 
   </section>

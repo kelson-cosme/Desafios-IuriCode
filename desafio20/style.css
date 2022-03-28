@@ -225,6 +225,7 @@ path{
   background-color: #0C0C0C;
   width: 25%;
   border-left: 4px solid rgba(54,255,0,0.7035189075630253);
+  border-radius: 50%;
 }
 
 .sobre-right{
@@ -246,6 +247,7 @@ path{
   font-weight: 300;
   font-size: 18px;
   color: #C4C4C4;
+  text-align: justify;
 }
 .sobre img{
   width: 100%;
@@ -447,6 +449,7 @@ path{
   border: 2px solid #fff;
   padding: 7px 19px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .links img{
   margin-right: 10px;
@@ -508,6 +511,10 @@ footer{
   font-weight: 400;
   font-size: 16px;
   padding: 40px 0;
+}
+
+span{
+  color: rgba(54,255,0,0.7035189075630253);
 }
 
 @media screen and (max-width:767px) {
@@ -633,15 +640,21 @@ footer{
     border-bottom: 4px solid rgba(54,255,0,0.7035189075630253);
     background-color: #151515;
   }
+  
   .exp-right{
     width: 100%;
     margin: auto;
     margin-top: 20px;
   }
-  .titulo p{
-    transition: 9s;
+  .titulo{
+    flex-direction: column;
   }
-
+  .titulo h1{
+    margin: 0;
+  }
+  .funcao{
+    text-align: center;
+  }
   /* projetos------------ */
   .projetos{
     width: 90%
@@ -651,6 +664,19 @@ footer{
   }
   .list-projetos li{
     width: calc(100% - 2px);
+  }
+  /* ------------------ */
+  .descricao{
+    text-align: justify;
+  }
+
+
+  /* footer */
+  /* ----------------------------- */
+  footer{
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
   }
 
 }
