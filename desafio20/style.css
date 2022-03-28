@@ -11,12 +11,11 @@
 :root{
   --tamanho: calc(100% - 60px);
   --tamanho2: calc(100% - 120px);
-
 }
 .corpo{
   max-width: 1366px;
   margin: auto;
-
+  overflow: hidden;
 }
 body{
   background-color: #0C0C0C;
@@ -516,6 +515,33 @@ footer{
 span{
   color: rgba(54,255,0,0.7035189075630253);
 }
+
+/* -------------------------------------------------------- */
+/* Animação */
+
+[data-anime] {
+  opacity: 0;
+  transition: .8s;  
+}
+[data-anime = "left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+[data-anime = "right"] {
+  transform: translate3d(50px, 0, 0);
+}
+[data-anime = "top"] {
+  transform: translate3d(0,-50px, 0);
+}
+[data-anime = "bottom"] {
+  transform: translate3d(0, 50px, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+
 
 @media screen and (max-width:767px) {
   header{

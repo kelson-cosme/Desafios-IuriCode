@@ -11,7 +11,7 @@
   <section class="corpo">
     <div class="preencher"></div>
 
-    <header>
+    <header data-anime="left">
 
       <h1>Portifólio</h1>
       <nav>
@@ -41,7 +41,7 @@
       </div>
     </header>
 
-    <section class="apresentacao">
+    <section class="apresentacao" data-anime="top">
       <div class="apres-left">
         <h2>OLÁ, EU SOU</h2>
         <h1 id="text">KELSON COSME</h1>
@@ -422,11 +422,11 @@
     <section class="sobre-fora">
       <section class="sobre">
 
-        <div class="sobre-left">
+        <div class="sobre-left" data-anime="left">
           <img src="/imgs/kelson2.png" alt="">
         </div>
   
-        <div class="sobre-right">
+        <div class="sobre-right" data-anime="right">
           <h1>SOBRE MIM</h1>
           <h2>Cuiabá - MT, Brasil</h2>
           <p>Sou estudante de Engenharia da Computação, atualmente desenvolvo site de baixo porte, estou sempre em busca de evolução. Estou a procura de de vagas na minha área.</p>
@@ -452,15 +452,15 @@
 
 
     <section class="experiencia" id="experiencia">
-      <h1>EXPERIÊNCIA</h1>
+      <h1 data-anime="left">EXPERIÊNCIA</h1>
       
       <div class="exp-dentro">
 
         <div id="lista" class="exp-left">
 
           <ul class="list-exp">
-            <li id="l1" class="todos bordas-none bordas" value = "1">Agion Tecnologia</li>
-            <li id="l2" class="todos bordas-none" value = "2"> Fórum da comarca de Rosário Oeste </li>
+            <li data-anime="left" id="l1" class="todos bordas-none bordas" value = "1">Agion Tecnologia</li>
+            <li data-anime="left" id="l2" class="todos bordas-none" value = "2"> Fórum da comarca de Rosário Oeste </li>
             <!-- <li id="l3" class="todos bordas-none" value = "3">Zuplae</li>
             <li id="l4" class="todos bordas-none" value = "4">ContWeb</li>
             <li id="l5" class="todos bordas-none" value = "5">iuricode</li>
@@ -469,8 +469,8 @@
 
         </div>
 
-        <div id="direita" class="exp-right">
-          <div id="resultado" class="titulo">
+        <div id="direita" class="exp-right" data-anime="right">
+          <div id="resultado" class="titulo" >
             <h1>teste1</h1>
 
             <p>Nov 2021 - Atual</p>
@@ -487,12 +487,12 @@
    
     <div class="projetos-fora" id="projetos">
       <section class="projetos">
-        <h1>PROJETOS</h1>
+        <h1 data-anime="bottom">PROJETOS</h1>
       
         <ul id="projetos" class="list-projetos">
 
 <!-- -------------------------------------------- -->
-          <li>
+          <li data-anime="right">
             <div id="cards" class="card">
               <div value = 0 onclick="cards(event)" id="fechar" class="fechar">
                 <div class="line1"></div>
@@ -514,7 +514,7 @@
             <div class="img-projetos img-projetos1"></div>
             
             <div class="descricao">
-              <h1>Nome do projeto</h1>
+              <h1>Feliz Natal</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
 
               <button class="botao" value="0" class="links" onclick="cards()">Tecnologias usadas no projeto
@@ -532,7 +532,7 @@
 
 <!-- -------------------------------------------- -->
           
-          <li>
+          <li data-anime="left"> 
             <div id="cards" class="card">
               <div value = 1 onclick="cards(event)" id="fechar" class="fechar">
                 <div class="line1"></div>
@@ -553,7 +553,7 @@
             <div class="img-projetos img-projetos2"><img src="" alt=""></div>
             
             <div class="descricao">
-              <h1>Nome do projeto</h1>
+              <h1>jordanshoes</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
 
               <button class="botao" value="1" class="links" onclick="cards(event)">Tecnologias usadas no projeto
@@ -573,7 +573,7 @@
           <!-- -------------------------------------------- -->
 
 
-          <li>
+          <li data-anime="left">
 
             <div id="cards" class="card">
               <div value="2" onclick="cards(event)" id="fechar" class="fechar">
@@ -596,7 +596,7 @@
             <div class="img-projetos img-projetos3"><img src="" alt=""></div>
             
             <div class="descricao">
-              <h1>Nome do projeto</h1>
+              <h1>Kenai</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
 
               <button class="botao" value="2" class="links" onclick="cards()">Tecnologias usadas no projeto
@@ -615,7 +615,7 @@
 <!-- -------------------------------------------- -->
 
 
-          <li>
+          <li data-anime="right">
             <div id="cards" class="card">
               <div value = 3 onclick="cards(event)" id="fechar" class="fechar">
                 <div class="line1"></div>
@@ -637,7 +637,7 @@
             <div class="img-projetos img-projetos4"></div>
             
             <div class="descricao">
-              <h1>Nome do projeto</h1>
+              <h1>Onepage</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
 
               <button class="botao" value="3" class="links" onclick="cards()">Tecnologias usadas no projeto
@@ -656,7 +656,7 @@
 <!-- -------------------------------------------- -->
 
 
-          <li>
+          <li data-anime="bottom">
             <div id="cards" class="card">
               <div value = 4 onclick="cards(event)" id="fechar" class="fechar">
                 <div class="line1"></div>
@@ -678,7 +678,7 @@
             <div class="img-projetos img-projetos5"></div>
             
             <div class="descricao">
-              <h1>Nome do projeto</h1>
+              <h1>Portifolio</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
 
               <button class="botao" value="4" class="links" onclick="cards()">Tecnologias usadas no projeto
@@ -697,7 +697,7 @@
           <!-- -------------------------------------------- -->
 
 
-          <li>
+          <li data-anime="top">
             <div id="cards" class="card">
               <div value = 5 onclick="cards(event)" id="fechar" class="fechar">
                 <div class="line1"></div>
@@ -719,7 +719,7 @@
             <div class="img-projetos img-projetos6"></div>
             
             <div class="descricao">
-              <h1>Nome do projeto</h1>
+              <h1>Rachi</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</p>
 
               <button class="botao" value="5" class="links" onclick="cards()">Tecnologias usadas no projeto
@@ -754,5 +754,6 @@
 <script src="/cards.js"></script>
 <script src="/exp.js"></script>
 <script src="/menuMobile.js"></script>
+<script src="/rolagem.js"></script>
 
 </html>
