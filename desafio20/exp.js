@@ -5,11 +5,13 @@ let todos = document.querySelectorAll(".todos");
 function procurar(event){
     texto[event.target.value](); //pegar evento do click
     
+    console.log(texto)
+
     let a = event.target.id //evento do click em uma variavel
     let b = document.getElementById(a); //pegar o id do elemento com click
   
     for(let t = 0; t < todos.length; t++){
-        if(todos[t].className == "todos bordas-none"){
+        if(todos[t].className == "todos bordas-none animate"){
             b.classList.add("bordas")
         } else {
             todos[t].classList.remove("bordas")
