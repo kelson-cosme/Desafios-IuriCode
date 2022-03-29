@@ -23,7 +23,9 @@ body{
 html, body{
   height: 100%;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 header{
   width: var(--tamanho);
   margin: auto;
