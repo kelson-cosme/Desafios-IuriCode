@@ -507,16 +507,27 @@ footer{
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #C4C4C4;
+  text-align: center;
 
   font-weight: 400;
   font-size: 16px;
   padding: 40px 0;
 }
-
-span{
-  color: rgba(54,255,0,0.7035189075630253);
+footer div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+footer a{
+  width: 10%;
+}
+footer img{
+  width: 100%;
+  padding: 0;
+}
+
 
 /* -------------------------------------------------------- */
 /* Animação */
